@@ -1,0 +1,114 @@
+
+/* ===== Thème Nature & Santé =====
+Palette :
+- Vert sauge : #88C9A1
+- Vert profond : #2E8B57
+- Blanc cassé : #F9FAF8
+- Gris doux : #E8ECEF
+- Accent doré clair : #DDBB72
+*/
+:root{
+  --vert-sauge:#88C9A1;
+  --vert-profond:#2E8B57;
+  --blanc-casse:#F9FAF8;
+  --gris-doux:#E8ECEF;
+  --or-clair:#DDBB72;
+
+  --bg:var(--blanc-casse);
+  --text:#1B1F1D;
+  --link:var(--vert-profond);
+  --accent:var(--vert-sauge);
+}
+
+html,body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', 'Helvetica', sans-serif;
+}
+
+/* Header */
+header, nav, .navbar{
+  background: linear-gradient(90deg, var(--vert-profond), var(--vert-sauge));
+  color: white;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+header a, nav a{
+  color:white !important;
+  font-weight:600;
+}
+header a:hover, nav a:hover{
+  color:var(--or-clair) !important;
+}
+
+/* Hero */
+.hero, .jumbotron{
+  background: linear-gradient(180deg, #FFFFFF, var(--gris-doux));
+  color: var(--vert-profond);
+}
+.hero h1{
+  color: var(--vert-profond);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.hero .btn{
+  background: var(--vert-profond);
+  color: white;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-weight:600;
+}
+.hero .btn:hover{
+  background: var(--vert-sauge);
+}
+
+/* Sections */
+section, .section{
+  padding: 60px 0;
+}
+section:nth-of-type(even){
+  background: var(--gris-doux);
+}
+
+/* Cards */
+.card, .service, .feature{
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover, .service:hover, .feature:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* Boutons */
+.btn, button, input[type="submit"], .button{
+  background: var(--vert-profond);
+  color:white !important;
+  border:none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight:600;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+.btn:hover, button:hover, input[type="submit"]:hover{
+  background: var(--vert-sauge);
+  transform: translateY(-1px);
+}
+
+/* Footer */
+footer{
+  background: var(--vert-profond);
+  color: #F0FDF4;
+  border-top: 2px solid var(--vert-sauge);
+}
+footer a{ color: var(--or-clair); }
+footer a:hover{ color:white; }
+
+/* Petites touches */
+h1,h2,h3,h4{
+  color: var(--vert-profond);
+}
+a{ color: var(--link); }
+a:hover{ color: var(--vert-sauge); }
+
